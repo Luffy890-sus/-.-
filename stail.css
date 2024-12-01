@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -348,7 +349,7 @@ body {
 
 @media (min-width: 0px) {
   .header {
-    position: fixed;
+    position: absolute;
     z-index: 12;
     top: 0px;
     left: 0px;
@@ -414,6 +415,160 @@ body {
   }
   .header .nav .header__div-2 {
     display: none;
+  }
+}
+@media (min-width: 768px) {
+  .header .nav {
+    height: 148px;
+  }
+  .header .nav .header__div-1 {
+    margin-top: 32px;
+  }
+  .header .nav .header__div-1 .header__cate-1 .header__links .header__menu {
+    display: none;
+  }
+  .header .nav .header__div-1 .header__cate-1 .header__links .header__list {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+  .header .nav .header__div-1 .header__cate-1 .header__links .header__list .header__itme .header__link {
+    text-decoration: none;
+    color: #fff;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+    display: inline-block;
+    padding: 5px 0px;
+    position: relative;
+    transition: 0.4s;
+    gap: 6px;
+    display: flex;
+  }
+  .header .nav .header__div-1 .header__cate-1 .header__links .header__list .header__itme .header__link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #ec0d0d;
+    transition: 0.4s;
+  }
+  .header .nav .header__div-1 .header__cate-1 .header__links .header__list .header__itme .header__link:hover::after {
+    width: 100%;
+  }
+  .header .nav .header__div-1 .header__cate-1 .header__links .header__list .header__itme .header__link:hover {
+    text-shadow: 0 0 10px #ec0d0d;
+    color: #ec0d0d;
+  }
+  .header .nav .header__div-1 .header__cate-1 .header__icons .header__icons-linc {
+    margin-left: 0px;
+  }
+  .header .nav .header__div-1 .header__cate-1 .header__icons .header__icons-linc-2 {
+    display: flex;
+  }
+  .header .nav .header__div-1 .header__cate-2 .header__logo .img {
+    width: 154px;
+    height: 48px;
+  }
+  .header .nav .header__div-1 .header__cate-2 .border-2 {
+    display: none;
+  }
+  .header .nav .header__div-2 {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .header .nav {
+    height: 88px;
+  }
+  .header .nav .header__div-1 {
+    display: none;
+  }
+  .header .nav .header__div-2 {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+  }
+  .header .nav .header__div-2 .header__cort-1 {
+    display: flex;
+    width: 314px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header .nav .header__div-2 .header__cort-1 .header__logo .img {
+    width: 154px;
+    height: 48px;
+  }
+  .header .nav .header__div-2 .header__cort-1 .border-2 {
+    height: 48px;
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.5333333333);
+  }
+  .header .nav .header__div-2 .header__cort-1 .header__katalog {
+    background-color: rgba(255, 0, 0, 0);
+    align-items: center;
+    display: flex;
+    color: #fff;
+    gap: 8px;
+  }
+  .header .nav .header__div-2 .header__cort-2 {
+    display: flex;
+    gap: 50px;
+  }
+  .header .nav .header__div-2 .header__cort-2 .header__list {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+  .header .nav .header__div-2 .header__cort-2 .header__list .header__itme .header__link {
+    text-decoration: none;
+    color: #fff;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+    display: inline-block;
+    padding: 5px 0px;
+    position: relative;
+    transition: 0.4s;
+    gap: 6px;
+    display: flex;
+  }
+  .header .nav .header__div-2 .header__cort-2 .header__list .header__itme .header__link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #ec0d0d;
+    transition: 0.4s;
+  }
+  .header .nav .header__div-2 .header__cort-2 .header__list .header__itme .header__link:hover::after {
+    width: 100%;
+  }
+  .header .nav .header__div-2 .header__cort-2 .header__list .header__itme .header__link:hover {
+    text-shadow: 0 0 10px #ec0d0d;
+    color: #ec0d0d;
+  }
+  .header .nav .header__div-2 .header__cort-2 .header__icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95px;
+  }
+  .header .nav .header__div-2 .header__cort-2 .header__icons .header__icons-linc {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .header .nav .header__div-2 .header__cort-2 .header__icons .header__icons-linc-2 {
+    background-color: rgba(255, 255, 255, 0);
   }
 }
 @media (min-width: 0px) {
